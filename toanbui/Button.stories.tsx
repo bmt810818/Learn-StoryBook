@@ -30,6 +30,14 @@ export const Primary: Story = {
         primary: true,
         label: 'Button',
     },
+    decorators: [
+        (Story) => {
+            <div style={{ margin: '3em' }}>
+                {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+                <Story />   
+            </div>
+        }
+    ]
 };
 
 export const Secondary: Story = {

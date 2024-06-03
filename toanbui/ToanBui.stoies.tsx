@@ -13,3 +13,9 @@ export const FirstStory: Story = {
         
     }
 }
+
+export const Toanui: Story = {
+    args: {
+        
+    }
+}
