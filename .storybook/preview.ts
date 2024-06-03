@@ -5,7 +5,8 @@ const preview: Preview = {
         async () => ({
             currentUser: await (await fetch('https://jsonplaceholder.typicode.com/users/1')).json(),
         })
-    ]
+    ],
+    tags: ['autodocs'],
 }
 
 export default preview;
