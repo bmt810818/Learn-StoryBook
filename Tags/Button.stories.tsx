@@ -32,7 +32,7 @@ export const Combo: Story = {
       <>
         <Button variant={1}>
         <Button variant={2}>
-        {/* Etc... */}
+        {/* Etc... */}.
       </>
     ),
   };
