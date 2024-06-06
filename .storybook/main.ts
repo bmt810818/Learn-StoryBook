@@ -12,7 +12,12 @@ const config: StorybookConfig = {
     addons: [
         // Other Storybook addons
         '@storybook/addon-interactions', //👈 Register the addon
-    ]
+        '@storybook/addon-links',
+        '@storybook/addon-essentials'
+    ],
+    core: {
+        builder: '@storybook/builder-vite', //👈 The builder enable here
+    }
 }
 
 export default config;
