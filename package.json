@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@storybook/react": "^8.1.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@storybook/addon-interactions": "^8.1.5",
+    "@storybook/builder-vite": "^8.1.5",
+    "@storybook/test": "^8.1.5"
+  },
+  "imports": {
+    "#api": {
+      "storybook": "./api.mock.ts",
+      "default": "./api.ts"
+    },
+    "#app/actions": {
+      "storybook": "./app/actions.mock.ts",
+      "default": "./app/action.ts"
+    },
+    "#lib/session": {
+      "storybook": "./lib/session.mock.ts",
+      "default": "./lib/session.ts"
+    },
+      "#lib/db": {
+        "test": "./lib/db.mock.ts",
+        "default": "./lib/db.ts"
+    },
+    "#*": ["./*", "./*.ts", "./*.tsx"]
+  }
+}
