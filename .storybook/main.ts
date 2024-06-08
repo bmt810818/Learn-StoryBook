@@ -1,8 +1,9 @@
 import type { StorybookConfig } from '@storybook/react'
 
 const config: StorybookConfig = {
-    framework: '@storybook/vue',
+    framework: '@storybook/react',
     stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx'],
+    staticDirts: ['../public', '../static'],
     addons: [
         // Other Storybook addons
         '@storybook/addon-interactions', //👈 Register the addon
@@ -12,6 +13,7 @@ const config: StorybookConfig = {
     core: {
         builder: '@storybook/builder-vite', //👈 The builder enable here
     },
+
     // webpackFinal: async (config) => {
     //     if (config.resolve) {
     //         config.resolve.alias = {
