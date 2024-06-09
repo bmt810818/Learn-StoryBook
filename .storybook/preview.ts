@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
-import { initialize, mswLoader } from 'msw-storybook-addon';
+import { initialize, mswLoader } from 'msw-storybook-addon'
+import { ThemeProvider } from 'styled-components'
 
 /*
  * Initializes MSW
@@ -24,6 +25,13 @@ const preview: Preview = {
             },
         },
     },
+    decorators: [
+        (Story) => (
+            <ThemeProvider theme="default">
+            {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+            </ThemeProvider>
+        ),
+    ],
 }
 
 export default preview;
